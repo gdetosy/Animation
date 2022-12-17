@@ -16,39 +16,91 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IIh-u6-dTs" customClass="SpringView" customModule="Spring">
-                                <rect key="frame" x="75" y="186" width="240" height="128"/>
-                                <color key="backgroundColor" systemColor="systemCyanColor"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDN-u4-cVe" customClass="SpringButton" customModule="Spring">
-                                <rect key="frame" x="158" y="492" width="74" height="35"/>
+                                <rect key="frame" x="158" y="492" width="74" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="start"/>
                                 <connections>
                                     <action selector="startAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YgM-8L-av6"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nou-iI-iGO">
+                                <rect key="frame" x="20" y="364" width="350" height="96.333333333333314"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Force" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezE-14-cQ9">
+                                        <rect key="frame" x="0.0" y="0.0" width="43.333333333333336" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4e-2g-ba8">
+                                        <rect key="frame" x="0.0" y="25.333333333333314" width="65.333333333333329" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLH-0T-c7r">
+                                        <rect key="frame" x="0.0" y="50.666666666666686" width="42.666666666666664" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curve" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyo-5I-pla">
+                                        <rect key="frame" x="0.0" y="76" width="45.333333333333336" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tD6-kf-gvU">
+                                <rect key="frame" x="50" y="72" width="290" height="42"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="name">
+                                        <attributes>
+                                            <font key="NSFont" size="36" name="MoonFlower"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IIh-u6-dTs" customClass="SpringView" customModule="Spring">
+                                <rect key="frame" x="95" y="153" width="200" height="200"/>
+                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IIh-u6-dTs" secondAttribute="bottom" constant="496" id="5Q3-fk-mJF"/>
-                            <constraint firstItem="lDN-u4-cVe" firstAttribute="top" secondItem="IIh-u6-dTs" secondAttribute="bottom" constant="178" id="JYh-Eq-Bgx"/>
-                            <constraint firstItem="IIh-u6-dTs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="139" id="KMU-Yu-1ir"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IIh-u6-dTs" secondAttribute="trailing" constant="75" id="Vow-WL-AS6"/>
-                            <constraint firstItem="IIh-u6-dTs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="lxq-ep-Efw"/>
+                            <constraint firstItem="tD6-kf-gvU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="0hF-px-Sq2"/>
+                            <constraint firstItem="nou-iI-iGO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="7bp-XH-tEB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IIh-u6-dTs" secondAttribute="trailing" constant="95" id="Fya-pR-Tsw"/>
+                            <constraint firstAttribute="bottom" secondItem="IIh-u6-dTs" secondAttribute="bottom" constant="491" id="NOe-Pk-dEo"/>
+                            <constraint firstItem="nou-iI-iGO" firstAttribute="top" secondItem="tD6-kf-gvU" secondAttribute="bottom" constant="250" id="NZU-oB-H0h"/>
+                            <constraint firstItem="IIh-u6-dTs" firstAttribute="top" secondItem="tD6-kf-gvU" secondAttribute="bottom" constant="39" id="T2w-nv-ne9"/>
+                            <constraint firstItem="IIh-u6-dTs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="Xx9-9F-bhx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nou-iI-iGO" secondAttribute="trailing" constant="20" id="cMz-7g-9II"/>
+                            <constraint firstItem="tD6-kf-gvU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="fHT-u1-B4G"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lDN-u4-cVe" secondAttribute="trailing" constant="158" id="n7x-n3-GCk"/>
+                            <constraint firstItem="lDN-u4-cVe" firstAttribute="top" secondItem="nou-iI-iGO" secondAttribute="bottom" constant="31.670000000000002" id="oAK-8T-mQm"/>
                             <constraint firstItem="lDN-u4-cVe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="158" id="p07-OQ-g9M"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tD6-kf-gvU" secondAttribute="trailing" constant="50" id="ze5-mv-QtI"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="curveLbl" destination="Lyo-5I-pla" id="pGp-v7-oOh"/>
+                        <outlet property="delayLbl" destination="nou-iI-iGO" id="PIc-io-0NF"/>
+                        <outlet property="durationLbl" destination="t4e-2g-ba8" id="nsD-0m-Ad1"/>
+                        <outlet property="forceLbl" destination="ezE-14-cQ9" id="2Bt-cM-Eg1"/>
+                        <outlet property="nameLbl" destination="tD6-kf-gvU" id="SzO-oC-o0G"/>
                         <outlet property="startBtn" destination="lDN-u4-cVe" id="Ec0-lg-wRH"/>
                         <outlet property="views" destination="IIh-u6-dTs" id="ErP-k9-Bd4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="48" y="-2"/>
+            <point key="canvasLocation" x="47.692307692307693" y="-2.1327014218009479"/>
         </scene>
     </scenes>
     <resources>

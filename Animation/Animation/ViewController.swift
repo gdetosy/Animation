@@ -10,14 +10,20 @@ import Spring
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var forceLbl: UILabel!
+    @IBOutlet weak var durationLbl: UILabel!
+    @IBOutlet weak var delayLbl: UIStackView!
+    @IBOutlet weak var curveLbl: UILabel!
     @IBOutlet weak var startBtn: SpringButton!
     @IBOutlet weak var views: SpringView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        views.delay = 3
+        views.layer.cornerRadius = views.layer.bounds.height / 2
+        
+        
       
-        views.animation = Animations.fadeIn.rawValue
-        views.animate()
+      
         
         
         
