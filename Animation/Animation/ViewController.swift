@@ -22,22 +22,22 @@ class ViewController: UIViewController {
     }
     
     @IBAction func startAnimation(_ sender: Any) {
-        let y = array.randomElement()!
+        let y = arrayAnimations.randomElement()!
         nameLbl.text = "\(y)"
         startBtn.animation = Animations.shake.rawValue
         startBtn.animate()
         
-        views.animation = y.rawValue
+        views.animation = y
         views.animate()
       
         views.force = round(CGFloat.random(in: 1...10) * 10) / 10
         views.duration = round(CGFloat.random(in: 1...10) * 10) / 10
         views.delay = round(CGFloat.random(in: 1...10) * 10) / 10
-        views.curve = Curves.easeInOut.rawValue
-    
+        views.curve = arrayCurves.randomElement()!
         forceLbl.text = "Force:" + " " + "\(views.force)"
         durationLbl.text = "Duration:" + " " + "\(views.duration)"
         delayLbl.text = "Delay:" + " " + "\(views.delay)"
+        curveLbl.text = "Curve:" + " " + "\(views.curve)"
     }
 
     func settings() {

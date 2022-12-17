@@ -36,37 +36,41 @@ enum Animations: String, CaseIterable  {
 }
 
     
-var array = [ Animations.shake,
-              Animations.pop,
-              Animations.morph,
-              Animations.squeeze,
-              Animations.wobble,
-              Animations.swing,
-              Animations.flipX,
-              Animations.flipY,
-              Animations.fall,
-              Animations.squeezeLeft,
-              Animations.squeezeRight,
-              Animations.squeezeDown,
-              Animations.squeezeUp,
-              Animations.slideLeft,
-              Animations.slideRight,
-              Animations.slideDown,
-              Animations.slideUp,
-              Animations.fadeIn,
-              Animations.fadeOut,
-              Animations.fadeInLeft,
-              Animations.fadeInRight,
-              Animations.fadeInDown,
-              Animations.fadeInUp,
-              Animations.zoomIn,
-              Animations.zoomOut,
-              Animations.flash ]
+//var array = [ Animations.shake,
+//              Animations.pop,
+//              Animations.morph,
+//              Animations.squeeze,
+//              Animations.wobble,
+//              Animations.swing,
+//              Animations.flipX,
+//              Animations.flipY,
+//              Animations.fall,
+//              Animations.squeezeLeft,
+//              Animations.squeezeRight,
+//              Animations.squeezeDown,
+//              Animations.squeezeUp,
+//              Animations.slideLeft,
+//              Animations.slideRight,
+//              Animations.slideDown,
+//              Animations.slideUp,
+//              Animations.fadeIn,
+//              Animations.fadeOut,
+//              Animations.fadeInLeft,
+//              Animations.fadeInRight,
+//              Animations.fadeInDown,
+//              Animations.fadeInUp,
+//              Animations.zoomIn,
+//              Animations.zoomOut,
+//              Animations.flash ]
+//
 
-enum Curves: String {
-    case spring
-    case linear
-    case easeIn
-    case easeOut
-    case easeInOut
-}
+    enum Curves: String,CaseIterable {
+        case spring
+        case linear
+        case easeIn
+        case easeOut
+        case easeInOut
+    }
+let arrayAnimations: [String] = Animations.allCases.map { $0.rawValue }
+let arrayCurves: [String] = Curves.allCases.map { $0.rawValue }
+
