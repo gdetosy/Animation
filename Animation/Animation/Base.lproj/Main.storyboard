@@ -24,29 +24,29 @@
                                     <action selector="startAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YgM-8L-av6"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nou-iI-iGO">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nou-iI-iGO">
                                 <rect key="frame" x="20" y="364" width="350" height="96.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Force" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezE-14-cQ9">
-                                        <rect key="frame" x="0.0" y="0.0" width="43.333333333333336" height="20.333333333333332"/>
+                                        <rect key="frame" x="153.33333333333334" y="0.0" width="43.333333333333343" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4e-2g-ba8">
-                                        <rect key="frame" x="0.0" y="25.333333333333314" width="65.333333333333329" height="20.333333333333329"/>
+                                        <rect key="frame" x="142.33333333333334" y="25.333333333333314" width="65.333333333333343" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLH-0T-c7r">
-                                        <rect key="frame" x="0.0" y="50.666666666666686" width="42.666666666666664" height="20.333333333333329"/>
+                                        <rect key="frame" x="153.66666666666666" y="50.666666666666686" width="42.666666666666657" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curve" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyo-5I-pla">
-                                        <rect key="frame" x="0.0" y="76" width="45.333333333333336" height="20.333333333333329"/>
+                                        <rect key="frame" x="152.33333333333334" y="76" width="45.333333333333343" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -77,20 +77,20 @@
                             <constraint firstItem="nou-iI-iGO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="7bp-XH-tEB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IIh-u6-dTs" secondAttribute="trailing" constant="95" id="Fya-pR-Tsw"/>
                             <constraint firstAttribute="bottom" secondItem="IIh-u6-dTs" secondAttribute="bottom" constant="491" id="NOe-Pk-dEo"/>
-                            <constraint firstItem="nou-iI-iGO" firstAttribute="top" secondItem="tD6-kf-gvU" secondAttribute="bottom" constant="250" id="NZU-oB-H0h"/>
-                            <constraint firstItem="IIh-u6-dTs" firstAttribute="top" secondItem="tD6-kf-gvU" secondAttribute="bottom" constant="39" id="T2w-nv-ne9"/>
                             <constraint firstItem="IIh-u6-dTs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="Xx9-9F-bhx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nou-iI-iGO" secondAttribute="trailing" constant="20" id="cMz-7g-9II"/>
                             <constraint firstItem="tD6-kf-gvU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="fHT-u1-B4G"/>
+                            <constraint firstItem="nou-iI-iGO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="317" id="gnW-6d-7b6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lDN-u4-cVe" secondAttribute="trailing" constant="158" id="n7x-n3-GCk"/>
                             <constraint firstItem="lDN-u4-cVe" firstAttribute="top" secondItem="nou-iI-iGO" secondAttribute="bottom" constant="31.670000000000002" id="oAK-8T-mQm"/>
                             <constraint firstItem="lDN-u4-cVe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="158" id="p07-OQ-g9M"/>
+                            <constraint firstItem="IIh-u6-dTs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="106" id="wi6-gN-hZd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tD6-kf-gvU" secondAttribute="trailing" constant="50" id="ze5-mv-QtI"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="curveLbl" destination="Lyo-5I-pla" id="pGp-v7-oOh"/>
-                        <outlet property="delayLbl" destination="nou-iI-iGO" id="PIc-io-0NF"/>
+                        <outlet property="delayLbl" destination="YLH-0T-c7r" id="3Xy-yW-f5q"/>
                         <outlet property="durationLbl" destination="t4e-2g-ba8" id="nsD-0m-Ad1"/>
                         <outlet property="forceLbl" destination="ezE-14-cQ9" id="2Bt-cM-Eg1"/>
                         <outlet property="nameLbl" destination="tD6-kf-gvU" id="SzO-oC-o0G"/>

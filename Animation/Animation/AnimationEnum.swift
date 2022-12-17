@@ -5,8 +5,8 @@
 //  Created by tosy on 16.12.22.
 //
 
-import Foundation
-enum Animations: String {
+import UIKit
+enum Animations: String, CaseIterable  {
     case shake
     case pop
     case morph
@@ -34,6 +34,35 @@ enum Animations: String {
     case zoomOut
     case flash
 }
+
+    
+var array = [ Animations.shake,
+              Animations.pop,
+              Animations.morph,
+              Animations.squeeze,
+              Animations.wobble,
+              Animations.swing,
+              Animations.flipX,
+              Animations.flipY,
+              Animations.fall,
+              Animations.squeezeLeft,
+              Animations.squeezeRight,
+              Animations.squeezeDown,
+              Animations.squeezeUp,
+              Animations.slideLeft,
+              Animations.slideRight,
+              Animations.slideDown,
+              Animations.slideUp,
+              Animations.fadeIn,
+              Animations.fadeOut,
+              Animations.fadeInLeft,
+              Animations.fadeInRight,
+              Animations.fadeInDown,
+              Animations.fadeInUp,
+              Animations.zoomIn,
+              Animations.zoomOut,
+              Animations.flash ]
+
 enum Curves: String {
     case spring
     case linear
