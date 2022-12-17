@@ -17,14 +17,17 @@ class ViewController: UIViewController {
     @IBOutlet var startBtn: SpringButton!
     @IBOutlet var views: SpringView!
     override func viewDidLoad() {
+        nameLbl.font = UIFont(name: "MoonFlower", size: 60)
         settings()
         super.viewDidLoad()
     }
     
     @IBAction func startAnimation(_ sender: Any) {
         let y = arrayAnimations.randomElement()!
+     
         nameLbl.text = "\(y)"
-        startBtn.animation = Animations.shake.rawValue
+        startBtn.animation = Animations.pop.rawValue
+        startBtn.force = 1
         startBtn.animate()
         
         views.animation = y
@@ -45,10 +48,6 @@ class ViewController: UIViewController {
         forceLbl.text = "Force:" + " " + "\(views.force)"
         durationLbl.text = "Duration:" + " " + "\(views.duration)"
         delayLbl.text = "Delay:" + " " + "\(views.delay)"
-        
-        views.delay = 3
-        startBtn.repeatCount = 3
-        startBtn.animate()
         views.layer.cornerRadius = views.layer.bounds.height / 2
     }
 }

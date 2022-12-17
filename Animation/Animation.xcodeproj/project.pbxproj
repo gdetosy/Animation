@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		968080D1294E376400E33DC0 /* aMoonFlower.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E2CA56294E34B8007B0198 /* aMoonFlower.ttf */; };
+		968080D3294E393200E33DC0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 968080D5294E393200E33DC0 /* Info.plist */; };
 		96B6FD30294C67BA0007AFE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B6FD2F294C67BA0007AFE6 /* AppDelegate.swift */; };
 		96B6FD32294C67BA0007AFE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B6FD31294C67BA0007AFE6 /* SceneDelegate.swift */; };
 		96B6FD34294C67BA0007AFE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B6FD33294C67BA0007AFE6 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		0D328D120712DE3B2C9644EB /* Pods-Animation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animation.debug.xcconfig"; path = "Target Support Files/Pods-Animation/Pods-Animation.debug.xcconfig"; sourceTree = "<group>"; };
 		51274FA5C48DFFF62DC0E23B /* Pods_Animation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Animation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		968080D7294E3B0700E33DC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/Info.plist; sourceTree = "<group>"; };
+		968080D8294E3BC100E33DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
 		96B6FD2C294C67BA0007AFE6 /* Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B6FD2F294C67BA0007AFE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96B6FD31294C67BA0007AFE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,8 +31,8 @@
 		96B6FD36294C67BA0007AFE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96B6FD38294C67BF0007AFE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96B6FD3B294C67BF0007AFE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		96B6FD3D294C67BF0007AFE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96E2CA51294C9707007B0198 /* AnimationEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationEnum.swift; sourceTree = "<group>"; };
+		96E2CA56294E34B8007B0198 /* aMoonFlower.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = aMoonFlower.ttf; path = "../../../../../Downloads/Moon Flower/aMoonFlower.ttf"; sourceTree = "<group>"; };
 		F11D9F137F0BE3E333F69352 /* Pods-Animation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animation.release.xcconfig"; path = "Target Support Files/Pods-Animation/Pods-Animation.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +77,7 @@
 		96B6FD2E294C67BA0007AFE6 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				96E2CA56294E34B8007B0198 /* aMoonFlower.ttf */,
 				96B6FD2F294C67BA0007AFE6 /* AppDelegate.swift */,
 				96B6FD31294C67BA0007AFE6 /* SceneDelegate.swift */,
 				96B6FD33294C67BA0007AFE6 /* ViewController.swift */,
@@ -80,7 +85,7 @@
 				96B6FD35294C67BA0007AFE6 /* Main.storyboard */,
 				96B6FD38294C67BF0007AFE6 /* Assets.xcassets */,
 				96B6FD3A294C67BF0007AFE6 /* LaunchScreen.storyboard */,
-				96B6FD3D294C67BF0007AFE6 /* Info.plist */,
+				968080D5294E393200E33DC0 /* Info.plist */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -154,8 +159,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				968080D1294E376400E33DC0 /* aMoonFlower.ttf in Resources */,
 				96B6FD3C294C67BF0007AFE6 /* LaunchScreen.storyboard in Resources */,
 				96B6FD39294C67BF0007AFE6 /* Assets.xcassets in Resources */,
+				968080D3294E393200E33DC0 /* Info.plist in Resources */,
 				96B6FD37294C67BA0007AFE6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +226,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		968080D5294E393200E33DC0 /* Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				968080D7294E3B0700E33DC0 /* en */,
+				968080D8294E3BC100E33DC0 /* Base */,
+			);
+			name = Info.plist;
+			sourceTree = "<group>";
+		};
 		96B6FD35294C67BA0007AFE6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
