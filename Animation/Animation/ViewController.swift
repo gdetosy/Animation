@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet private var startBtn: SpringButton!
     @IBOutlet private var views: SpringView!
     override func viewDidLoad() {
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "paper")!)
         settings()
         super.viewDidLoad()
     }
