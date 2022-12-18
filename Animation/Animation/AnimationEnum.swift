@@ -6,7 +6,7 @@
 //
 
 import UIKit
-enum Animations: String, CaseIterable {
+ enum Animations: String, CaseIterable {
     case shake
     case pop
     case morph
@@ -35,7 +35,7 @@ enum Animations: String, CaseIterable {
     case flash
 }
 
-enum Curves: String, CaseIterable {
+ enum Curves: String, CaseIterable {
     case spring
     case linear
     case easeIn
@@ -45,3 +45,5 @@ enum Curves: String, CaseIterable {
 
 let arrayAnimations: [String] = Animations.allCases.map { $0.rawValue }
 let arrayCurves: [String] = Curves.allCases.map { $0.rawValue }
+var viewColors: [UIColor] = [.red, .blue, .black, .green, .yellow, .darkGray]
+

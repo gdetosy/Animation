@@ -16,8 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="bumaga" id="u29-oq-RVl">
+                                <rect key="frame" x="20" y="422" width="350" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDN-u4-cVe" customClass="SpringButton" customModule="Spring">
-                                <rect key="frame" x="158" y="492" width="74" height="34.333333333333371"/>
+                                <rect key="frame" x="130" y="492" width="130" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="start"/>
                                 <connections>
@@ -27,25 +31,25 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nou-iI-iGO">
                                 <rect key="frame" x="20" y="364" width="350" height="96.333333333333314"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Force" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezE-14-cQ9">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Force" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezE-14-cQ9" customClass="SpringLabel" customModule="Spring">
                                         <rect key="frame" x="153.33333333333334" y="0.0" width="43.333333333333343" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4e-2g-ba8">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4e-2g-ba8" customClass="SpringLabel" customModule="Spring">
                                         <rect key="frame" x="142.33333333333334" y="25.333333333333314" width="65.333333333333343" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLH-0T-c7r">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLH-0T-c7r" customClass="SpringLabel" customModule="Spring">
                                         <rect key="frame" x="153.66666666666666" y="50.666666666666686" width="42.666666666666657" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curve" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyo-5I-pla">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curve" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyo-5I-pla" customClass="SpringLabel" customModule="Spring">
                                         <rect key="frame" x="152.33333333333334" y="76" width="45.333333333333343" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -65,19 +69,19 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="tD6-kf-gvU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="0hF-px-Sq2"/>
                             <constraint firstItem="nou-iI-iGO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="7bp-XH-tEB"/>
+                            <constraint firstItem="lDN-u4-cVe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="AWc-oT-tps"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IIh-u6-dTs" secondAttribute="trailing" constant="95" id="Fya-pR-Tsw"/>
                             <constraint firstAttribute="bottom" secondItem="IIh-u6-dTs" secondAttribute="bottom" constant="491" id="NOe-Pk-dEo"/>
                             <constraint firstItem="IIh-u6-dTs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="Xx9-9F-bhx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nou-iI-iGO" secondAttribute="trailing" constant="20" id="cMz-7g-9II"/>
                             <constraint firstItem="tD6-kf-gvU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="fHT-u1-B4G"/>
                             <constraint firstItem="nou-iI-iGO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="317" id="gnW-6d-7b6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lDN-u4-cVe" secondAttribute="trailing" constant="158" id="n7x-n3-GCk"/>
                             <constraint firstItem="lDN-u4-cVe" firstAttribute="top" secondItem="nou-iI-iGO" secondAttribute="bottom" constant="31.670000000000002" id="oAK-8T-mQm"/>
-                            <constraint firstItem="lDN-u4-cVe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="158" id="p07-OQ-g9M"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lDN-u4-cVe" secondAttribute="trailing" constant="130" id="pox-bJ-8Fx"/>
                             <constraint firstItem="IIh-u6-dTs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="106" id="wi6-gN-hZd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tD6-kf-gvU" secondAttribute="trailing" constant="50" id="ze5-mv-QtI"/>
                         </constraints>
@@ -98,9 +102,7 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="bumaga" width="1920" height="1080"/>
         <systemColor name="systemCyanColor">
             <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
