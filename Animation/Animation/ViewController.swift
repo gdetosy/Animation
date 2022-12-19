@@ -57,7 +57,7 @@ class ViewController: UIViewController {
         forceLbl.text = "Force:" + " " + "\(views.force)"
         durationLbl.text = "Duration:" + " " + "\(views.duration)"
         delayLbl.text = "Delay:" + " " + "\(views.delay)"
-        curveLbl.text = "Curve:" + " " + "\(views.curve)"
+        curveLbl.text = "Curve:" + " " + "DEFAULT"
         
         views.layer.cornerRadius = views.layer.bounds.height / 2
        
