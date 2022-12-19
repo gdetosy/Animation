@@ -20,73 +20,83 @@
                                 <rect key="frame" x="20" y="422" width="350" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tD6-kf-gvU">
+                                <rect key="frame" x="30" y="63" width="330" height="50.666666666666657"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="36"/>
+                                <color key="textColor" red="0.038048144123234463" green="0.0" blue="0.27844891674901173" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nou-iI-iGO">
+                                <rect key="frame" x="30" y="359" width="330" height="96.333333333333314"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Force" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezE-14-cQ9" customClass="SpringLabel" customModule="Spring">
+                                        <rect key="frame" x="143.33333333333334" y="0.0" width="43.333333333333343" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.038048144120000002" green="0.0" blue="0.27844891669999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4e-2g-ba8" customClass="SpringLabel" customModule="Spring">
+                                        <rect key="frame" x="132.33333333333334" y="25.333333333333314" width="65.333333333333343" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.038048144120000002" green="0.0" blue="0.27844891669999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLH-0T-c7r" customClass="SpringLabel" customModule="Spring">
+                                        <rect key="frame" x="143.66666666666666" y="50.666666666666686" width="42.666666666666657" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.038048144120000002" green="0.0" blue="0.27844891669999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curve" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyo-5I-pla" customClass="SpringLabel" customModule="Spring">
+                                        <rect key="frame" x="142.33333333333334" y="76" width="45.333333333333343" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.038048144120000002" green="0.0" blue="0.27844891669999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Lyo-5I-pla" firstAttribute="top" secondItem="YLH-0T-c7r" secondAttribute="bottom" constant="5" id="WGH-cR-gtE"/>
+                                    <constraint firstItem="YLH-0T-c7r" firstAttribute="top" secondItem="t4e-2g-ba8" secondAttribute="bottom" constant="5" id="YMD-Mn-KE7"/>
+                                    <constraint firstItem="Lyo-5I-pla" firstAttribute="top" secondItem="YLH-0T-c7r" secondAttribute="bottom" constant="5" id="aDj-No-abs"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IIh-u6-dTs" customClass="SpringView" customModule="Spring">
+                                <rect key="frame" x="130" y="151" width="150" height="150"/>
+                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDN-u4-cVe" customClass="SpringButton" customModule="Spring">
-                                <rect key="frame" x="130" y="492" width="130" height="34.333333333333371"/>
+                                <rect key="frame" x="130" y="666" width="130" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="START">
-                                    <color key="baseForegroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="startAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YgM-8L-av6"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nou-iI-iGO">
-                                <rect key="frame" x="20" y="364" width="350" height="96.333333333333314"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Force" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezE-14-cQ9" customClass="SpringLabel" customModule="Spring">
-                                        <rect key="frame" x="153.33333333333334" y="0.0" width="43.333333333333343" height="20.333333333333332"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.038048144120000002" green="0.0" blue="0.27844891669999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4e-2g-ba8" customClass="SpringLabel" customModule="Spring">
-                                        <rect key="frame" x="142.33333333333334" y="25.333333333333314" width="65.333333333333343" height="20.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.038048144120000002" green="0.0" blue="0.27844891669999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLH-0T-c7r" customClass="SpringLabel" customModule="Spring">
-                                        <rect key="frame" x="153.66666666666666" y="50.666666666666686" width="42.666666666666657" height="20.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.038048144120000002" green="0.0" blue="0.27844891669999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curve" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyo-5I-pla" customClass="SpringLabel" customModule="Spring">
-                                        <rect key="frame" x="152.33333333333334" y="76" width="45.333333333333343" height="20.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.038048144120000002" green="0.0" blue="0.27844891669999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tD6-kf-gvU">
-                                <rect key="frame" x="50" y="72" width="290" height="50.666666666666657"/>
-                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="36"/>
-                                <color key="textColor" red="0.038048144123234463" green="0.0" blue="0.27844891674901173" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IIh-u6-dTs" customClass="SpringView" customModule="Spring">
-                                <rect key="frame" x="95" y="153" width="200" height="200"/>
-                                <color key="backgroundColor" systemColor="systemCyanColor"/>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="tD6-kf-gvU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="0hF-px-Sq2"/>
-                            <constraint firstItem="nou-iI-iGO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="7bp-XH-tEB"/>
                             <constraint firstItem="lDN-u4-cVe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="AWc-oT-tps"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IIh-u6-dTs" secondAttribute="trailing" constant="95" id="Fya-pR-Tsw"/>
-                            <constraint firstAttribute="bottom" secondItem="IIh-u6-dTs" secondAttribute="bottom" constant="491" id="NOe-Pk-dEo"/>
-                            <constraint firstItem="IIh-u6-dTs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="Xx9-9F-bhx"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nou-iI-iGO" secondAttribute="trailing" constant="20" id="cMz-7g-9II"/>
-                            <constraint firstItem="tD6-kf-gvU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="fHT-u1-B4G"/>
-                            <constraint firstItem="nou-iI-iGO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="317" id="gnW-6d-7b6"/>
-                            <constraint firstItem="lDN-u4-cVe" firstAttribute="top" secondItem="nou-iI-iGO" secondAttribute="bottom" constant="31.670000000000002" id="oAK-8T-mQm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IIh-u6-dTs" secondAttribute="trailing" constant="130" id="Ich-os-O2c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lDN-u4-cVe" secondAttribute="bottom" constant="109.67" id="Lvk-qg-fKT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tD6-kf-gvU" secondAttribute="trailing" constant="30" id="Nkq-A7-Mdh"/>
+                            <constraint firstItem="nou-iI-iGO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="312" id="Xml-YT-u6g"/>
+                            <constraint firstItem="nou-iI-iGO" firstAttribute="top" secondItem="IIh-u6-dTs" secondAttribute="bottom" constant="58" id="bQF-Ha-xUb"/>
+                            <constraint firstItem="tD6-kf-gvU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="bYs-qh-a4j"/>
+                            <constraint firstItem="tD6-kf-gvU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="iW0-RY-DZL"/>
+                            <constraint firstItem="IIh-u6-dTs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="101" id="lkL-TF-4n2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nou-iI-iGO" secondAttribute="trailing" constant="30" id="mGF-sQ-tFe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lDN-u4-cVe" secondAttribute="trailing" constant="130" id="pox-bJ-8Fx"/>
-                            <constraint firstItem="IIh-u6-dTs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="106" id="wi6-gN-hZd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tD6-kf-gvU" secondAttribute="trailing" constant="50" id="ze5-mv-QtI"/>
+                            <constraint firstItem="IIh-u6-dTs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="tKz-8e-bak"/>
+                            <constraint firstItem="nou-iI-iGO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="w6E-sl-fbQ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -108,9 +118,6 @@
         <image name="bumaga" width="1920" height="1080"/>
         <systemColor name="systemCyanColor">
             <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="tertiarySystemGroupedBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

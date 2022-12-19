@@ -8,13 +8,11 @@
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
-		<key>UIApplicationSupportsTabbedSceneCollection</key>
-		<false/>
 		<key></key>
 		<false/>
-		<key>fonts</key>
-		<false/>
 		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UIApplicationSupportsTabbedSceneCollection</key>
 		<false/>
 		<key>UISceneConfigurations</key>
 		<dict>
@@ -23,9 +21,9 @@
 				<dict>
 					<key>UISceneClassName</key>
 					<string></string>
-					<key>UISceneDelegateClassName</key>
-					<string></string>
 					<key>UISceneConfigurationName</key>
+					<string></string>
+					<key>UISceneDelegateClassName</key>
 					<string></string>
 					<key>UISceneStoryboardFile</key>
 					<string></string>
@@ -43,6 +41,8 @@
 				</dict>
 			</array>
 		</dict>
+		<key>fonts</key>
+		<false/>
 	</dict>
 </dict>
 </plist>
