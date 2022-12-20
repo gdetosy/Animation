@@ -8,7 +8,7 @@
 import Spring
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     @IBOutlet private var nameLbl: UILabel!
     @IBOutlet private var forceLbl: SpringLabel!
     @IBOutlet private var durationLbl: SpringLabel!
