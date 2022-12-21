@@ -16,6 +16,11 @@ final class ViewController: UIViewController {
     @IBOutlet private var curveLbl: SpringLabel!
     @IBOutlet private var startBtn: SpringButton!
     @IBOutlet private var views: SpringView!
+   
+    override func viewDidLayoutSubviews() {
+        views.layer.cornerRadius = views.layer.bounds.height / 2
+    }
+    
     override func viewDidLoad() {
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "paper")!)
         settings()
@@ -59,7 +64,7 @@ final class ViewController: UIViewController {
         delayLbl.text = "Delay:" + " " + "\(views.delay)"
         curveLbl.text = "Curve:" + " " + "DEFAULT"
         
-        views.layer.cornerRadius = views.layer.bounds.height / 2
+        
        
         startBtn.animation = Animations.fadeInUp.rawValue
         startBtn.delay = 0.1

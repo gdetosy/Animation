@@ -69,6 +69,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IIh-u6-dTs" customClass="SpringView" customModule="Spring">
                                 <rect key="frame" x="95" y="153" width="200" height="200"/>
                                 <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IIh-u6-dTs" secondAttribute="height" multiplier="1:1" id="I0e-La-OzH"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -78,7 +81,6 @@
                             <constraint firstItem="nou-iI-iGO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="7bp-XH-tEB"/>
                             <constraint firstItem="lDN-u4-cVe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="AWc-oT-tps"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IIh-u6-dTs" secondAttribute="trailing" constant="95" id="Fya-pR-Tsw"/>
-                            <constraint firstAttribute="bottom" secondItem="IIh-u6-dTs" secondAttribute="bottom" constant="491" id="NOe-Pk-dEo"/>
                             <constraint firstItem="IIh-u6-dTs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="Xx9-9F-bhx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nou-iI-iGO" secondAttribute="trailing" constant="20" id="cMz-7g-9II"/>
                             <constraint firstItem="tD6-kf-gvU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="fHT-u1-B4G"/>
